@@ -2,18 +2,11 @@
   --blue-color: #00acdc;
 }
 
-* {
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
@@ -31,13 +24,16 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-li {
+.nav-item {
   margin-right: 20px;
 }
 
-li:last-child {
+.nav-item:last-child {
   margin-right: 0;
 }
 
@@ -45,7 +41,7 @@ li:last-child {
   text-transform: uppercase;
   color: #000;
   font-size: 12px;
-
+  text-decoration: none;
   display: flex;
   align-items: center;
   position: relative;
